@@ -229,7 +229,22 @@ a {
 .detail-link:hover {
     text-decoration: underline;
 }
+/* HOVER AND FOCUS */
+.cart-link {
+    transition: all 0.3s ease;
+}
 
+.cart-link:hover {
+    background-color: #315c48;
+    color: #ffffff;
+    border-color: #315c48;
+}
+
+a:focus-visible {
+    outline: 3px solid #d99b54;
+    outline-offset: 3px;
+    border-radius: 4px;
+}
 /* FOOTER */
 .footer {
     background: #315c48;
