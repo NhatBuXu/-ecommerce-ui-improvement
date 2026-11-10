@@ -151,3 +151,50 @@ Các hình ảnh kiểm thử được lưu trong thư mục `evidence/`:
 Sau quá trình cải thiện, website StudyCorner có cấu trúc HTML5 rõ ràng, bố cục được tổ chức bằng Flexbox và CSS Grid, đồng thời bổ sung các trạng thái tương tác và khả năng hiển thị trên nhiều kích thước màn hình.
 
 Các kết quả kiểm thử cho thấy giao diện đáp ứng những tiêu chí đã đặt ra trong phạm vi bài tập.
+
+12. Câu hỏi kiểm tra kiến thức
+Câu 1. Trong khu vực giao diện của em, em đã sử dụng những phần tử HTML5 nào? Vì sao em chọn chúng?
+
+Website StudyCorner sử dụng các phần tử HTML5 như:
+- <header>: Chứa logo và khu vực đầu trang.
+- <nav>: Chứa các liên kết điều hướng.
+- <main>: Chứa nội dung chính của website.
+- <section>: Phân chia các khu vực nội dung như sản phẩm nổi bật.
+- <article>: Tổ chức thông tin riêng cho từng sản phẩm.
+- <footer>: Chứa thông tin cuối trang.
+- <img>: Hiển thị hình ảnh sản phẩm.
+- <a>: Tạo liên kết điều hướng và nút thao tác.
+Các phần tử này giúp cấu trúc HTML rõ ràng, dễ quản lý và có ý nghĩa ngữ nghĩa phù hợp với nội dung website.
+
+Câu 2. Giải thích sự khác nhau giữa margin và padding. Cho ví dụ từ thẻ sản phẩm của em.
+- margin là khoảng cách bên ngoài đường viền của phần tử, giúp tạo khoảng cách giữa các thẻ sản phẩm.
+- padding là khoảng cách bên trong đường viền, giúp nội dung không bị sát vào cạnh thẻ.
+Trong StudyCorner, margin được sử dụng để tạo khoảng cách giữa các thẻ sản phẩm, còn padding giúp bố cục bên trong mỗi thẻ thông thoáng hơn.
+
+Câu 3. Trong bài của em, Flexbox được sử dụng ở đâu? Giải thích tác dụng của justify-content và align-items.
+
+Flexbox được sử dụng để sắp xếp các thành phần trong header và menu điều hướng.
+- display: flex: Kích hoạt bố cục Flexbox trên phần tử cha.
+- justify-content: Căn chỉnh các phần tử theo trục chính.
+- align-items: Căn chỉnh các phần tử theo trục phụ.
+Nhờ đó, logo và menu được bố trí hợp lý, tạo giao diện cân đối hơn.
+
+Câu 4. CSS Grid khác Flexbox như thế nào? Vì sao em sử dụng Grid cho danh sách sản phẩm?
+
+Flexbox chủ yếu bố trí các phần tử theo một chiều, theo hàng hoặc cột. Trong khi đó, CSS Grid hỗ trợ bố trí theo cả hàng và cột.
+
+Em sử dụng CSS Grid cho danh sách sản phẩm StudyCorner vì cần sắp xếp nhiều thẻ sản phẩm thành các cột có khoảng cách đồng đều, giúp người dùng dễ quan sát và so sánh sản phẩm.
+
+Câu 5. Nếu xóa quy tắc CSS display: grid khỏi danh sách sản phẩm, giao diện có thể thay đổi như thế nào?
+
+Nếu xóa display: grid, danh sách sản phẩm sẽ không còn được bố trí theo cấu trúc lưới đã thiết lập. Các thẻ sản phẩm có thể trở về cách hiển thị mặc định của HTML, khiến bố cục không còn đồng đều và khó quan sát hơn.
+
+Câu 6. Vì sao cần sử dụng thuộc tính alt cho hình ảnh sản phẩm?
+
+Thuộc tính alt cung cấp nội dung mô tả thay thế cho hình ảnh. Nếu hình ảnh không tải được, trình duyệt có thể hiển thị nội dung này. Ngoài ra, alt còn hỗ trợ người dùng sử dụng trình đọc màn hình và cải thiện khả năng tiếp cận website.
+
+Câu 7. Hãy nêu một đề xuất của AI mà em đã kiểm tra hoặc điều chỉnh trước khi đưa vào bài tập.
+
+Trong quá trình cải thiện StudyCorner, em sử dụng AI để tham khảo cách bổ sung hiệu ứng hover và focus-visible cho các liên kết điều hướng và nút thao tác.
+
+Sau khi nhận được đề xuất, em kiểm tra lại mã CSS trên trình duyệt, điều chỉnh màu sắc và hiệu ứng chuyển đổi để phù hợp với giao diện chung. Em cũng kiểm tra trạng thái focus bằng bàn phím để đảm bảo các liên kết có thể được nhận biết khi điều hướng.

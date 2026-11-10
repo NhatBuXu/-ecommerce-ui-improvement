@@ -1,4 +1,4 @@
-# BÁO CÁO SỬ DỤNG AI – DỰ ÁN STUDYCORNER
+# BÁO CÁO SỬ DỤNG AI – DỰ ÁN STUDYCORNER buổi 1
 
 ## 1. Mục đích sử dụng AI
 
@@ -54,3 +54,71 @@ Quá trình sử dụng AI được thực hiện theo các bước:
 Người thực hiện chịu trách nhiệm đối với mã nguồn, nội dung và kết quả cuối cùng của dự án. Các nội dung do AI đề xuất được xem xét, điều chỉnh và kiểm tra trước khi áp dụng vào sản phẩm.
 
 AI được sử dụng với mục đích hỗ trợ học tập, không thay thế quá trình tìm hiểu và thực hành của người thực hiện.
+
+------------------------------------------------------------------------------------
+
+# BÁO CÁO SỬ DỤNG AI – DỰ ÁN STUDYCORNER buổi 2
+
+## 1. Mục đích sử dụng AI
+
+AI được sử dụng như một công cụ hỗ trợ trong quá trình phân tích, xây dựng và cải thiện giao diện website StudyCorner. AI giúp giải thích kiến thức HTML5, CSS3, đề xuất phương án cải thiện giao diện và hỗ trợ kiểm tra lỗi trong quá trình thực hiện.
+
+AI chỉ đóng vai trò hỗ trợ tham khảo. Các nội dung được kiểm tra, điều chỉnh và áp dụng phù hợp với yêu cầu bài tập.
+
+## 2. Các công việc có sử dụng AI
+
+| STT | Công việc | Nội dung AI hỗ trợ |
+|---|---|---|
+| 1 | Phân tích HTML5 | Giải thích cấu trúc và vai trò các phần tử HTML trong website. |
+| 2 | Phân tích CSS3 | Hỗ trợ kiểm tra và giải thích các thuộc tính CSS. |
+| 3 | Box Model | Giải thích cách sử dụng margin, padding và border. |
+| 4 | Flexbox | Hỗ trợ phân tích cách bố trí các thành phần trong header. |
+| 5 | CSS Grid | Giải thích cách tổ chức danh sách sản phẩm theo dạng lưới. |
+| 6 | Hover và Focus | Đề xuất hiệu ứng tương tác cho liên kết và nút giỏ hàng. |
+| 7 | Responsive Design | Hỗ trợ kiểm tra bố cục trên desktop, tablet và mobile. |
+| 8 | Kiểm tra và sửa lỗi | Hỗ trợ xác định lỗi CSS và hướng dẫn xử lý xung đột Git. |
+| 9 | Tài liệu dự án | Hỗ trợ xây dựng nội dung README và báo cáo sử dụng AI. |
+
+## 3. Công cụ AI sử dụng
+
+- **ChatGPT:** Hỗ trợ phân tích mã HTML/CSS, giải thích kiến thức, đề xuất cải thiện giao diện, hướng dẫn kiểm tra và sửa lỗi.
+- **GitHub Codespaces:** Môi trường thực hành, chỉnh sửa mã nguồn và kiểm tra website.
+- **Chrome DevTools:** Kiểm tra giao diện và khả năng hiển thị trên các kích thước màn hình.
+
+## 4. Một số prompt tiêu biểu
+
+**Prompt 1 – Phân tích giao diện:**
+
+"Phân tích cấu trúc HTML và CSS của website StudyCorner, giải thích chức năng của các thành phần và đề xuất cách cải thiện giao diện."
+
+**Prompt 2 – Cải thiện hiệu ứng tương tác:**
+
+"Hướng dẫn bổ sung hiệu ứng hover và focus cho nút giỏ hàng, liên kết điều hướng và liên kết chi tiết sản phẩm mà không làm thay đổi bố cục ban đầu."
+
+**Prompt 3 – Responsive Design:**
+
+"Kiểm tra khả năng hiển thị của website trên desktop, tablet và mobile; hướng dẫn điều chỉnh CSS để giao diện phù hợp với từng kích thước màn hình."
+
+**Prompt 4 – Kiểm tra lỗi:**
+
+"Phân tích đoạn CSS đang sử dụng, xác định các lỗi và hướng dẫn cách sửa mà vẫn giữ nguyên thiết kế sản phẩm ban đầu."
+
+## 5. Kết quả AI đề xuất và quá trình điều chỉnh
+
+Các đề xuất từ AI được kiểm tra trước khi áp dụng vào website.
+
+- Kiểm tra lại cấu trúc HTML và đường dẫn hình ảnh sản phẩm.
+- Điều chỉnh CSS để duy trì bố cục và khoảng cách giữa các thành phần.
+- Bổ sung hiệu ứng hover và focus-visible cho các thành phần tương tác.
+- Kiểm tra giao diện ở nhiều kích thước màn hình bằng Chrome DevTools.
+- Kiểm tra lại mã nguồn sau khi chỉnh sửa để tránh ảnh hưởng đến giao diện ban đầu.
+
+Một số đề xuất được điều chỉnh lại về màu sắc, khoảng cách và cách hiển thị để phù hợp với phong cách thiết kế của StudyCorner.
+
+## 6. Đánh giá và cam kết
+
+Việc sử dụng AI giúp tiết kiệm thời gian tìm hiểu kiến thức và hỗ trợ xử lý các vấn đề kỹ thuật trong quá trình thực hiện dự án.
+
+Người thực hiện chịu trách nhiệm kiểm tra, lựa chọn và điều chỉnh nội dung do AI đề xuất trước khi đưa vào sản phẩm cuối cùng.
+
+AI được sử dụng với mục đích hỗ trợ học tập, không thay thế quá trình thực hành và đánh giá của người thực hiện.

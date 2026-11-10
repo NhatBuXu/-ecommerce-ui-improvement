@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .portfolio {
+            max-width: 1120px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Tiêu đề */
+        .portfolio h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Danh sách tab */
+        .list-tab {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .list-tab li {
+            display: inline-block;
+        }
+
+        .list-tab a {
+            display: block;
+            padding: 12px 18px;
+            color: #444;
+            text-decoration: none;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            background-color: white;
+            transition: 0.2s;
+        }
+
+        .list-tab a:hover,
+        .list-tab li:first-child a {
+            color: white;
+            background-color: #333;
+            border-color: #333;
+        }
+
+        /* Gallery hình ảnh */
+        .galerry {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .galerry li {
+            overflow: hidden;
+        }
+
+        .galerry a {
+            display: block;
+        }
+
+        .galerry img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            transition: transform 0.3s;
+        }
+
+        .galerry img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Hiển thị trên màn hình nhỏ */
+        @media (max-width: 700px) {
+            .galerry {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 450px) {
+            .galerry {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="portfolio">
+
+        <h2>MY PORTFOLIO</h2>
+
+        <ul class="list-tab">
+            <li><a href="./">All</a></li>
+            <li><a href="./">Web App</a></li>
+            <li><a href="./">UI/UX</a></li>
+            <li><a href="./">Graphics Design</a></li>
+            <li><a href="./">Mobile App</a></li>
+            <li><a href="./">Branding</a></li>
+            <li><a href="./">Marketing</a></li>
+        </ul>
+
+        <ul class="galerry">
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio 1"></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio 2"></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio 3"></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio 4"></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio 5"></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio 6"></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio 7"></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio 8"></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio 9"></a></li>
+        </ul>
+
+    </section>
+
+</body>
+</html>

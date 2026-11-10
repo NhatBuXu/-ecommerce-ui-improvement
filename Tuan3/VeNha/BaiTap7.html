@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7 - Layout Website</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        .wrapper {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+            background-color: white;
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #244b78;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #f4c542;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+            padding: 25px;
+            flex: 1;
+        }
+
+        .content {
+            flex: 3;
+            background-color: #eaf1f8;
+            padding: 25px;
+            min-height: 300px;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #f5f0e8;
+            padding: 25px;
+        }
+
+        footer {
+            background-color: #244b78;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                flex-direction: column;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <h1>Website Layout</h1>
+            <p>Minh họa cấu trúc bố cục trang web</p>
+        </header>
+
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+
+        <main>
+            <section class="content">
+                <h2>Nội dung chính</h2>
+                <p>
+                    Đây là khu vực hiển thị nội dung chính của website.
+                    Các thông tin và bài viết sẽ được trình bày tại đây.
+                </p>
+            </section>
+
+            <aside>
+                <h2>Thanh bên</h2>
+                <p>Khu vực hiển thị thông tin bổ sung.</p>
+            </aside>
+        </main>
+
+        <footer>
+            <p>© 2026 - Bài tập thực hành HTML và CSS</p>
+        </footer>
+
+    </div>
+</body>
+</html>

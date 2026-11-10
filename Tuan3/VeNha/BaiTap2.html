@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 2 - CSS cơ bản</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Câu 2a */
+        .ueh {
+            color: blue;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 30px;
+        }
+
+        /* Câu 2b */
+        .cnttd {
+            color: red;
+            text-align: right;
+            font-style: italic;
+            border: 2px dotted yellow;
+            border-radius: 10px;
+            background-color: lightgray;
+            font-size: 15px;
+            opacity: 0.5;
+            padding: 10px;
+        }
+
+        /* Câu 2c */
+        .bit {
+            font-size: 36px;
+            font-weight: bold;
+            color: #174b91;
+            letter-spacing: 3px;
+            text-align: center;
+            text-shadow: 2px 2px 3px #aaa;
+        }
+
+        /* Câu 2d */
+        .bit-background {
+            min-height: 120px;
+            background-image: url("https://bit.ueh.edu.vn/wp-content/uploads/2017/06/BIT_logo.png");
+            background-size: 30px 30px;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        /* Câu 2e - i: Ẩn nội dung tràn */
+        .overflow-hidden {
+            width: 100px;
+            height: 50px;
+            overflow: hidden;
+            border: 1px solid black;
+        }
+
+        /* Câu 2e - ii: Cắt nội dung bằng dấu ... */
+        .overflow-ellipsis {
+            width: 100px;
+            height: 50px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            border: 1px solid black;
+        }
+
+        /* Câu 2e - iii: Không xuống dòng */
+        .overflow-nowrap {
+            white-space: nowrap;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BÀI TẬP 2 - CSS CƠ BẢN</h1>
+
+    <h2>Câu a. Đại học UEH</h2>
+    <p class="ueh">Đại học UEH</p>
+
+    <h2>Câu b. Khoa CNTTD</h2>
+    <p class="cnttd">Khoa CNTTD - Đại học UEH</p>
+
+    <h2>Câu c. Định dạng chữ BIT-UEH</h2>
+    <p class="bit">BIT - UEH</p>
+
+    <h2>Câu d. Logo BIT làm hình nền</h2>
+    <div class="bit-background">
+        Logo BIT được sử dụng làm hình nền lặp lại và cố định.
+    </div>
+
+    <h2>Câu e. Thuộc tính Overflow</h2>
+
+    <h3>i. Ẩn nội dung khi bị tràn</h3>
+    <p class="overflow-hidden">
+        Nhu cầu xã hội ngành Thương mại điện tử tại Việt Nam hiện nay đang tăng trưởng mạnh mẽ.
+    </p>
+
+    <h3>ii. Cắt nội dung bị tràn với dấu ...</h3>
+    <p class="overflow-ellipsis">
+        Nhu cầu xã hội ngành Thương mại điện tử tại Việt Nam hiện nay đang tăng trưởng mạnh mẽ.
+    </p>
+
+    <h3>iii. White-space: nowrap</h3>
+    <p class="overflow-nowrap">
+        Nhu cầu xã hội ngành Thương mại điện tử tại Việt Nam hiện nay đang tăng trưởng mạnh mẽ.
+    </p>
+</body>
+</html>
