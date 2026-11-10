@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập cá nhân - Phát triển ứng dụng WEB/TMĐT</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px 15px;
+            background: #f2f5f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+        }
+
+        header {
+            text-align: center;
+            background: #24496b;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+        }
+
+        h1 {
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            color: #24496b;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+
+        .task-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .task-list a {
+            display: block;
+            padding: 15px;
+            background: #edf3f9;
+            color: #24496b;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .task-list a:hover {
+            background: #d5e5f5;
+            text-decoration: underline;
+        }
+
+        .info p {
+            line-height: 1.7;
+        }
+
+        .social a {
+            display: inline-block;
+            margin-right: 15px;
+            color: #1769aa;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .task-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <img src="https://drive.google.com/file/d/1vUOCLK9jMqRgNXUVDfuPZyCVRq6AtVN_/view?usp=drive_link" alt="Ảnh đại diện" class="avatar">
+            <h1>Trang cá nhân</h1>
+            <p>Bài tập cá nhân - Phát triển ứng dụng WEB/TMĐT</p>
+        </header>
+
+        <section class="info">
+            <h2>Thông tin cá nhân</h2>
+            <p><strong>Họ và tên:</strong> [Trần Đức Nhật]</p>
+            <p><strong>Mã số sinh viên:</strong> [31241027952]</p>
+            <p><strong>Lớp:</strong> [EE0001]</p>
+            <p><strong>Trường:</strong> Đại học Kinh tế TP. Hồ Chí Minh (UEH)</p>
+            <p><strong>Email:</strong> [nhattran.31241027952@st.ueh.edu.vn]</p>
+        </section>
+
+        <section>
+            <h2>Các bài tập đã thực hiện</h2>
+
+            <div class="task-list">
+                <a href="BaiTap1.html" target="_blank">Bài 1 - CSS Diner</a>
+                <a href="BaiTap2.html" target="_blank">Bài 2 - HTML/CSS</a>
+                <a href="BaiTap4.html" target="_blank">Bài 4 - CSS Layout</a>
+                <a href="BaiTap5.html" target="_blank">Bài 5 - CSS Styling</a>
+                <a href="BaiTap6.html" target="_blank">Bài 6 - CSS Practice</a>
+                <a href="BaiTap7.html" target="_blank">Bài 7 - Website Layout</a>
+                <a href="BaiTap9.html" target="_blank">Bài 9 - Font Awesome</a>
+            </div>
+        </section>
+
+        <section class="social">
+            <h2>Liên kết cá nhân</h2>
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">GitHub</a>
+        </section>
+
+        <footer>
+            <p>© 2026 - Bài tập cá nhân</p>
+        </footer>
+
+    </div>
+</body>
+</html>
