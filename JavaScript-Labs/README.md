@@ -63,9 +63,18 @@ JavaScript-Labs/
 
 Website triển khai:
 
-[JavaScript Labs Portfolio](https://github.com/NhatBuXu)
+[JavaScript Labs Portfolio](https://nhatbuxu.github.io/-ecommerce-ui-improvement/JavaScript-Labs/)
+
+GitHub Repository
+
+https://github.com/NhatBuXu/-ecommerce-ui-improvement
+
 
 ## 6. Hướng dẫn truy cập
+
+GitHub Pages
+
+https://nhatbuxu.github.io/-ecommerce-ui-improvement/JavaScript-Labs/
 
 - Truy cập `index.html` để xem trang giới thiệu tổng quan.
 - Chọn Lab 08 để xem các bài thực hành JavaScript cơ bản.
