@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JavaScript Labs Portfolio - Trần Đức Nhật">
+    <title>JavaScript Labs | Trần Đức Nhật</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --primary: #6757d9;
+            --secondary: #e9e6ff;
+            --dark: #20213a;
+            --muted: #73758c;
+            --background: #f7f7fc;
+            --white: #ffffff;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: var(--background);
+            color: var(--dark);
+            line-height: 1.7;
+        }
+
+        a { text-decoration: none; color: inherit; }
+
+        .container {
+            width: min(1100px, 90%);
+            margin: auto;
+        }
+
+        header {
+            background: rgba(255,255,255,.95);
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav {
+            min-height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover { color: var(--primary); }
+
+        .hero {
+            padding: 85px 0;
+            background: linear-gradient(135deg, #efedff, #f9f8ff 60%, #e7f1ff);
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            align-items: center;
+            gap: 45px;
+        }
+
+        .eyebrow {
+            color: var(--primary);
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: clamp(35px, 5vw, 56px);
+            line-height: 1.2;
+            margin: 15px 0;
+        }
+
+        .hero p { color: var(--muted); max-width: 600px; }
+
+        .student-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 22px;
+            box-shadow: 0 12px 40px rgba(45,40,100,.08);
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: var(--secondary);
+            color: var(--primary);
+            display: grid;
+            place-items: center;
+            font-size: 35px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .student-card h2 { font-size: 22px; margin-bottom: 12px; }
+
+        .student-card p {
+            font-size: 14px;
+            margin: 7px 0;
+            overflow-wrap: anywhere;
+        }
+
+        .student-card strong { color: var(--dark); }
+
+        .button {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 11px 22px;
+            border-radius: 9px;
+            margin-top: 20px;
+            font-weight: 600;
+            transition: .2s;
+        }
+
+        .button:hover {
+            background: #5142bd;
+            transform: translateY(-2px);
+        }
+
+        section { padding: 75px 0; }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-heading h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .section-heading p { color: var(--muted); }
+
+        .intro {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            color: var(--muted);
+        }
+
+        .lab-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .lab-card {
+            background: var(--white);
+            padding: 28px;
+            border-radius: 18px;
+            border: 1px solid #ededf5;
+            transition: .25s;
+        }
+
+        .lab-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(45,40,100,.09);
+        }
+
+        .lab-number {
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .lab-card h3 { margin: 12px 0; font-size: 20px; }
+
+        .lab-card p {
+            color: var(--muted);
+            font-size: 14px;
+            min-height: 95px;
+        }
+
+        .lab-card .button { font-size: 14px; }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .skill-item {
+            background: white;
+            padding: 23px;
+            border-radius: 14px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .skill-item h3 { font-size: 17px; margin-bottom: 8px; }
+
+        .skill-item p { color: var(--muted); font-size: 14px; }
+
+        .reflection {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 8px 30px rgba(45,40,100,.05);
+        }
+
+        .reflection p { color: var(--muted); text-align: justify; }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        footer p { font-size: 14px; color: #c5c5d5; }
+
+        @media (max-width: 768px) {
+            .hero-content { grid-template-columns: 1fr; }
+            .lab-grid, .skills-grid { grid-template-columns: 1fr; }
+            .nav-links { gap: 12px; font-size: 12px; }
+            .hero { padding: 55px 0; }
+            section { padding: 55px 0; }
+        }
+
+        @media (max-width: 430px) {
+            nav { flex-direction: column; padding: 15px 0; }
+            .nav-links { flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <a href="#" class="logo">JAVASCRIPT LABS</a>
+            <ul class="nav-links">
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#labs">Bài thực hành</a></li>
+                <li><a href="#skills">Kiến thức</a></li>
+                <li><a href="#reflection">Tổng kết</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero" id="about">
+        <div class="container hero-content">
+            <div>
+                <span class="eyebrow">E-commerce Application Development</span>
+                <h1>Xin chào!<br>Tôi là Trần Đức Nhật.</h1>
+                <p>
+                    Chào mừng đến với JavaScript Labs Portfolio.
+                    Đây là nơi tổng hợp quá trình học tập và thực hành
+                    JavaScript thông qua ba bài Lab: Language Foundations,
+                    DOM and Events và jQuery.
+                </p>
+                <a href="#labs" class="button">Khám phá bài thực hành</a>
+            </div>
+
+            <div class="student-card">
+                <div class="avatar">N</div>
+                <h2>Thông tin sinh viên</h2>
+                <p><strong>Họ và tên:</strong> Trần Đức Nhật</p>
+                <p><strong>MSSV:</strong> 31241027952</p>
+                <p><strong>Lớp học phần:</strong> 26C1INF50902701</p>
+                <p><strong>Môn học:</strong> Phát triển ứng dụng TMĐT</p>
+                <p><strong>GitHub:</strong>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        https://github.com/NhatBuXu
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-heading">
+                <h2>Giới thiệu dự án</h2>
+                <p>Hành trình tìm hiểu và ứng dụng JavaScript trong phát triển website</p>
+            </div>
+            <p class="intro">
+                Bộ bài thực hành gồm ba phần giúp tôi từng bước tiếp cận
+                JavaScript từ nền tảng ngôn ngữ đến khả năng tương tác với
+                giao diện website. Thông qua các Exercise, tôi thực hành
+                viết mã, kiểm tra kết quả trên trình duyệt và xử lý các
+                tình huống tương tác thường gặp. JavaScript đóng vai trò
+                quan trọng trong việc tạo ra những website năng động,
+                thân thiện và có khả năng phản hồi thao tác của người dùng,
+                đặc biệt trong các ứng dụng thương mại điện tử.
+            </p>
+        </div>
+    </section>
+
+    <section id="labs" style="background:#f0effb;">
+        <div class="container">
+            <div class="section-heading">
+                <h2>JavaScript Practice Labs</h2>
+                <p>Ba nội dung thực hành chính trong học phần</p>
+            </div>
+
+            <div class="lab-grid">
+                <article class="lab-card">
+                    <span class="lab-number">LAB 08</span>
+                    <h3>Language Foundations</h3>
+                    <p>
+                        Tìm hiểu cú pháp JavaScript, biến, kiểu dữ liệu,
+                        hàm, cấu trúc điều khiển và các đối tượng
+                        String, Date, Array, Object.
+                    </p>
+                    <a href="Lab08/" class="button">Truy cập Lab 08 →</a>
+                </article>
+
+                <article class="lab-card">
+                    <span class="lab-number">LAB 09</span>
+                    <h3>DOM and Events</h3>
+                    <p>
+                        Thực hành truy xuất và thay đổi phần tử DOM,
+                        tạo nội dung HTML, xử lý sự kiện và kiểm tra
+                        dữ liệu biểu mẫu.
+                    </p>
+                    <a href="Lab09/" class="button">Truy cập Lab 09 →</a>
+                </article>
+
+                <article class="lab-card">
+                    <span class="lab-number">LAB 10</span>
+                    <h3>jQuery</h3>
+                    <p>
+                        Làm việc với thư viện jQuery, Selectors,
+                        Events, thao tác DOM, hiệu ứng Animation
+                        và GET Requests.
+                    </p>
+                    <a href="Lab10/" class="button">Truy cập Lab 10 →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Kiến thức và kỹ năng đạt được</h2>
+                <p>Những nội dung tôi đã tiếp cận qua từng bài thực hành</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>01. JavaScript Fundamentals</h3>
+                    <p>
+                        Hiểu cách khai báo biến, sử dụng kiểu dữ liệu,
+                        hàm, vòng lặp, điều kiện và thao tác với
+                        các đối tượng JavaScript.
+                    </p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>02. DOM Manipulation</h3>
+                    <p>
+                        Biết cách lựa chọn phần tử HTML, cập nhật nội dung,
+                        thuộc tính, giao diện và tạo thêm phần tử DOM.
+                    </p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>03. Event Handling</h3>
+                    <p>
+                        Thực hành xử lý các sự kiện từ người dùng
+                        như click, mouseover, mouseout và thao tác
+                        với biểu mẫu.
+                    </p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>04. jQuery Selectors</h3>
+                    <p>
+                        Sử dụng jQuery để lựa chọn và thao tác
+                        các phần tử HTML một cách thuận tiện.
+                    </p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>05. Animation</h3>
+                    <p>
+                        Tìm hiểu cách tạo hiệu ứng chuyển động
+                        và cải thiện trải nghiệm tương tác
+                        trên giao diện website.
+                    </p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>06. AJAX and GET Requests</h3>
+                    <p>
+                        Làm quen với việc gửi yêu cầu GET,
+                        nhận dữ liệu và xử lý kết quả trả về
+                        thông qua jQuery.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reflection" style="background:#f0effb;">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Self-Assessment</h2>
+                <p>Tự đánh giá sau khi hoàn thành ba bài Lab</p>
+            </div>
+
+            <div class="reflection">
+                <p>
+                    Sau khi hoàn thành ba bài Lab, tôi đã hiểu rõ hơn
+                    về cách JavaScript hoạt động và vai trò của ngôn ngữ
+                    này trong phát triển website. Tôi đã thực hành sử dụng
+                    biến, hàm, cấu trúc điều khiển, thao tác DOM, xử lý
+                    sự kiện và thư viện jQuery. Trong đó, Lab 09 giúp tôi
+                    hiểu rõ hơn cách website phản hồi thao tác của người
+                    dùng, nhưng cũng đòi hỏi sự cẩn thận khi lựa chọn và
+                    cập nhật phần tử HTML. Những kiến thức này có thể
+                    được vận dụng để xây dựng chức năng kiểm tra biểu mẫu,
+                    cập nhật thông tin sản phẩm, giỏ hàng và tạo hiệu ứng
+                    tương tác trong website thương mại điện tử. Sau học
+                    phần, tôi cần tiếp tục cải thiện kỹ năng tổ chức mã
+                    nguồn, xử lý lỗi và kết nối dữ liệu để có thể xây dựng
+                    các ứng dụng web hoàn chỉnh hơn.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Trần Đức Nhật | JavaScript Labs Portfolio</p>
+    <p>Phát triển ứng dụng Thương mại điện tử</p>
+</footer>
+
+</body>
+</html>
