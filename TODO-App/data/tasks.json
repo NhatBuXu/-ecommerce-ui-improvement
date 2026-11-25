@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1795583346379,
+    "title": "Complete CSS Assignment",
+    "description": "Finish the Advanced FrontEnd CSS exercises.",
+    "date": "2026-11-25",
+    "priority": "High",
+    "status": "Completed"
+  },
+  {
+    "id": 1795583376079,
+    "title": "Review JavaScript - Updated",
+    "description": "Review JS concepts and practice coding.",
+    "date": "2026-11-25",
+    "priority": "Medium",
+    "status": "In Progress"
+  },
+  {
+    "id": 1795583392914,
+    "title": "Prepare Group Report",
+    "description": "Complete the report for the group project.",
+    "date": "2026-11-25",
+    "priority": "Medium",
+    "status": "Pending"
+  }
+]
